@@ -1,0 +1,1 @@
+Students are defined inside the program, including a deliberate duplicate registration number.

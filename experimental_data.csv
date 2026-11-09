@@ -1,0 +1,13 @@
+Question,Workload,Comparison,Measurement,Evidence
+Q1,5 fields,1000 tickets,System.nanoTime,see Task01 output
+Q1,50 fields,10000 tickets,System.nanoTime,see Task01 output
+Q1,200 fields,10000 tickets,System.nanoTime,see Task01 output
+Q2,1000 elements,ArrayList vs LinkedList,System.nanoTime,see Task02 output
+Q2,10000 elements,ArrayList vs LinkedList,System.nanoTime,see Task02 output
+Q2,50000 elements,ArrayList vs LinkedList,System.nanoTime,see Task02 output
+Q4,100 medicines,100000 lookups,System.nanoTime,see Task04 output
+Q4,1000 medicines,100000 lookups,System.nanoTime,see Task04 output
+Q4,10000 medicines,100000 lookups,System.nanoTime,see Task04 output
+Q7,10000 operations,LinkedList vs ArrayDeque,System.nanoTime,see Task07 output
+Q7,100000 operations,LinkedList vs ArrayDeque,System.nanoTime,see Task07 output
+Q7,500000 operations,LinkedList vs ArrayDeque,System.nanoTime,see Task07 output

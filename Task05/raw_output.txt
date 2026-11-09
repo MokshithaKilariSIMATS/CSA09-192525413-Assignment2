@@ -1,0 +1,6 @@
+=== INTER-COLLEGE SPORTS LEADERBOARD ===
+Q5: Generics, Comparator and Reusable Ranking
+
+Ranking: [Cobras(6,1), Eagles(9,6), Bisons(9,4), Panthers(9,4)]
+Bisons is above Panthers because points tie, goal difference ties, then Bisons < Panthers alphabetically.
+Result: Generic Leaderboard works with a reusable multi-field Comparator.

@@ -1,0 +1,20 @@
+=== MUSIC PLAYLIST LIST COMPARISON ===
+Q2: ArrayList vs LinkedList
+
+Size = 1000
+Structure    AddEnd(ms)   Front(ms)    GetK(ms)     Iterate(ms) 
+ArrayList    0.371        0.449        2.893        0.319       
+LinkedList   0.341        0.451        6.935        0.341       
+
+Size = 10000
+Structure    AddEnd(ms)   Front(ms)    GetK(ms)     Iterate(ms) 
+ArrayList    0.874        0.686        0.773        0.779       
+LinkedList   0.923        0.124        29.745       0.895       
+
+Size = 50000
+Structure    AddEnd(ms)   Front(ms)    GetK(ms)     Iterate(ms) 
+ArrayList    3.045        2.560        0.812        2.755       
+LinkedList   10.643       0.081        156.206      0.500       
+
+Changed condition: Up Next queue adds/removes at both ends -> ArrayDeque is preferred.
+Result: ArrayList is strong for random access and append-heavy playlists; ArrayDeque suits double-ended queues.

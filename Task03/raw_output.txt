@@ -1,0 +1,10 @@
+=== EVENT ATTENDANCE DE-DUPLICATION ===
+Q3: hashCode-equals Contract
+
+Prediction: broken implementation may retain duplicate logical students.
+Broken class set size: 3 (duplicate can survive because hashCode differs by identity)
+Correct class set size: 2
+Set contents: [192311001 Arun, 192311002 Divya]
+
+Rule: if a.equals(b) is true, a.hashCode() must equal b.hashCode().
+Result: final Student class satisfies the contract.

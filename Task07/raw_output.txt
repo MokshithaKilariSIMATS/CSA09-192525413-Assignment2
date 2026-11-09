@@ -1,0 +1,16 @@
+=== DAY-4 DESIGN CHALLENGE ===
+Q7: Diagnose, Redesign and Validate
+
+Selected limitation: a LinkedList is convenient for a queue but stores each element in a node with link overhead.
+Design objective: preserve O(1) amortized end operations while reducing per-element node overhead and improving locality.
+Redesign: ArrayDeque for the Up Next / double-ended queue.
+
+Size         LinkedList(ms)     ArrayDeque(ms)    
+10000        2.360              2.600             
+100000       13.914             10.496            
+500000       35.425             27.446            
+
+Complexity: LinkedList add/remove at ends O(1); ArrayDeque add/remove at ends O(1) amortized.
+Trade-off: ArrayDeque is not intended for indexed random access.
+Final decision: use ArrayDeque for the Up Next queue; keep ArrayList for index-heavy playlist editing.
+Result: redesign directly addresses the changed requirement without unnecessary scanning or shifting.

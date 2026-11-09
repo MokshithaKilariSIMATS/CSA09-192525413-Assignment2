@@ -1,0 +1,7 @@
+=== HOSPITAL EMERGENCY TRIAGE ===
+Q6: PriorityQueue and Fair Arrival Ordering
+
+Treatment order: Meena(S1) Kumar(S1) Lata(S2) Ravi(S3) John(S3) Asha(S5)
+Arrival counter: equal-severity patients are served in arrival order.
+Fairness note: repeated critical arrivals can starve minor cases; an aging rule can increase waiting patients' effective priority.
+Result: PriorityQueue enforces severity-first treatment with FIFO tie-breaking.

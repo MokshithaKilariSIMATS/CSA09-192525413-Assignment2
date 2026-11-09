@@ -1,0 +1,29 @@
+=== HOSPITAL PHARMACY INVENTORY ===
+Q4: HashMap vs TreeMap vs LinkedHashMap
+
+Medicines: 100
+HashMap 100k get: 217.251 ms
+TreeMap 100k get: 124.020 ms
+TreeMap code-order report: 0.261 ms
+LinkedHashMap insertion-order report: 0.224 ms
+First code-order item: M00000=M00000-Medicine0
+First insertion-order item: M00000=M00000-Medicine0
+
+Medicines: 1000
+HashMap 100k get: 79.420 ms
+TreeMap 100k get: 39.986 ms
+TreeMap code-order report: 0.376 ms
+LinkedHashMap insertion-order report: 0.154 ms
+First code-order item: M00000=M00000-Medicine0
+First insertion-order item: M00000=M00000-Medicine0
+
+Medicines: 10000
+HashMap 100k get: 51.174 ms
+TreeMap 100k get: 84.764 ms
+TreeMap code-order report: 0.362 ms
+LinkedHashMap insertion-order report: 0.183 ms
+First code-order item: M00000=M00000-Medicine0
+First insertion-order item: M00000=M00000-Medicine0
+
+Deployment choice: HashMap for frequent code lookup; TreeMap when natural code order is continuously required.
+Result: Map choice depends on lookup and ordering requirements.

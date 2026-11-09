@@ -1,0 +1,11 @@
+=== RAILWAY E-TICKET STRING BUILDING ===
+Q1: String vs StringBuilder vs StringBuffer
+
+Fields       Tickets      String +         StringBuilder    StringBuffer    
+5            1000         19.737           2.336            2.397           
+50           10000        42.153           50.738           35.256          
+200          10000        323.895          103.898          108.329         
+
+Prediction: StringBuilder should scale better for repeated appends.
+Recommendation: StringBuilder per ticket; StringBuffer for a shared mutable log.
+Result: Repeated concatenation creates more intermediate immutable String objects.
